@@ -30,9 +30,9 @@ sendbtn.addEventListener('click',(event)=>{
     event.preventDefault();
     event.stopPropagation();
     let data = {
-        id:socket.id,
-        message:messageInput.value,
-        username:username,
+        id: socket.id,
+        message: messageInput.value,
+        username: username,
     };
 
     socket.emit('sending message',data);
@@ -55,7 +55,7 @@ function renderMessage(data,type){
 
 socket.on('io spreading message',(data)=>{
     if(data.id!==socket.id){
-        renderMessage(data,RECEIVED);
+        renderMessage(data,"RECEIVED");
     }
     
 });
