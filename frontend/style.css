@@ -3,11 +3,11 @@
     margin: 0px;
 }
 #group-chat{
-    display: block; 
+    display: none; 
     /* revert this to none after development */
 }
 #form{
-    display: none;
+    display: block;
      /* revert this to block after development */
 }
 
@@ -18,7 +18,7 @@
     text-align: center;
     padding: 0.75rem;
 }
-.message-container{
+#message-container{
     padding: 0.5rem;
     height:90vh;
     background-color: #e1e1e1;
